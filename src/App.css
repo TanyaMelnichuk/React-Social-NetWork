@@ -10,26 +10,6 @@
     margin:0 auto;
 }
 
-.header {
-    grid-area: header;
-    background: green;
-}
 
-.header img{
-    width: 50px;
-}
 
-.nav {
-    grid-area: nav;
-    background: green;
-}
 
-.content {
-    grid-area: content;
-    background: yellow;
-}
-
-.content img{
-    width: 100%;
-    height: 300px;
-}
