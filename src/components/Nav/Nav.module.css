@@ -1,12 +1,23 @@
 .nav {
     grid-area: nav;
-    background: green;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    padding: 20px;
 }
 
 .item a{
-    color: white;
+    color: #7969c2;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
 }
 
-.item.active a{
-    color: #3a33d1;
+.item.active a,
+.item a:hover{
+    color: #0f0d42;
+    border-bottom: 2px solid #0f0d42;
 }

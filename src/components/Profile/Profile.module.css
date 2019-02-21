@@ -1,9 +1,10 @@
-.content {
-    grid-area: content;
-    background: yellow;
+.banner img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.content img {
-    width: 100%;
-    height: 300px;
+.contentPadding {
+    padding: 20px;
 }

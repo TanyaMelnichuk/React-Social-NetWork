@@ -4,14 +4,16 @@ import MyPosts from './MyPosts/MyPosts'
 
 const Profile = () => {
   return (
-    <div className={style.content}>
-      <div>
+    <div>
+      <div className={style.banner}>
         <img src="https://jooinn.com/images/picture-3.jpg" alt="image" />
       </div>
-      <div>
-        ava + description
+      <div className={style.contentPadding}>
+        <div>
+          ava + description
+        </div>
+        <MyPosts />
       </div>
-      <MyPosts />
     </div>
   )
 };
