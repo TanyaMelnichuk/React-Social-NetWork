@@ -1,18 +1,14 @@
 import React  from 'react';
 import style from './Profile.module.css';
+import ProfileInfo from './ProfileInfo/ProfileInfo'
 import MyPosts from './MyPosts/MyPosts'
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div>
-      <div className={style.banner}>
-        <img src="https://jooinn.com/images/picture-3.jpg" alt="image" />
-      </div>
-      <div className={style.contentPadding}>
-        <div>
-          ava + description
-        </div>
-        <MyPosts />
+      <ProfileInfo />
+      <div className="contentPadding">
+        <MyPosts posts={props.state.posts} />
       </div>
     </div>
   )

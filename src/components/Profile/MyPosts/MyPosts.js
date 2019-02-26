@@ -3,17 +3,20 @@ import style from './MyPosts.module.css';
 import Post from './Post/Posts';
 
 const MyPosts = (props) => {
+
+  let postsElements = props.posts.map(
+    p => <Post key={p.id} message={p.message} likesCount={p.likesCount} /> );
+
   return (
     <div>
-      My post
+      <h3>My post</h3>
       <div className={style.writeMessage}>
         <textarea cols="30" rows="10"></textarea>
         <button>Add post</button>
         <button>Remove post</button>
       </div>
       <div className={style.posts}>
-        <Post message="Hello, my name Tania" likesCount="30" />
-        <Post message="Good, Kiss you" likesCount="10" />
+        { postsElements }
       </div>
     </div>
 

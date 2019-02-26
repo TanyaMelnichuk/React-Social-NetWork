@@ -2,29 +2,27 @@
     padding: 20px;
 }
 
-.dialogs {
+.friendsList {
     display: grid;
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.dialog a {
+.friend a {
     text-decoration: none;
-    color: #9c9c9c;
-    font-weight: 500;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 60px 1fr;
     align-items: center;
 }
 
-.dialog a .name{
+.friend a .name{
     text-decoration: none;
     display: block;
     padding-left: 5px;
 }
 
-.dialog a.active .name,
-.dialog a:hover .name{
+.friend a.active .name,
+.friend a:hover .name{
     color: #7969c2;
 }
 
