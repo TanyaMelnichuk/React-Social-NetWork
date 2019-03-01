@@ -5,7 +5,7 @@ const ProfileInfo = () => {
   return (
     <div>
       <div className={style.banner}>
-        <img src="https://jooinn.com/images/picture-3.jpg" alt="image" />
+        <img src="/public/images/profile_banner.jpg.crdownload.jpg" alt="image" />
       </div>
       <div className="contentPadding">
         ava + description

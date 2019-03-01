@@ -13,6 +13,14 @@ const Dialogs = (props) => {
       (m, index) => <Message key={index} message={m.message}/>
   );
 
+  let newMessage = React.createRef();
+
+  let sendMessage = () => {
+      let text = newMessage.current.value;
+      alert(text);
+  }
+
+
   return (
     <div className={`${style.contentPadding} ${style.dialogs}`}>
       <div className={style.dialogsItems}>
@@ -20,6 +28,10 @@ const Dialogs = (props) => {
       </div>
       <div className={style.messages}>
         { messagesElements }
+          <div className={style.newMessage}>
+              <textarea cols="30" rows="10" ref={ newMessage } ></textarea>
+              <button onClick={ sendMessage }>Send message</button>
+          </div>
       </div>
     </div>
   )
